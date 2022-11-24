@@ -24,7 +24,7 @@ request(url, (error, response, body) => {
       console.error(err);
     }
     // file written successfully
-    console.log(`Downloaded and saved bytes to ${fileLocation}`);
+    console.log(`Downloaded and saved ${body.length} bytes to ${fileLocation}`);
     rl.close();
   });
 
